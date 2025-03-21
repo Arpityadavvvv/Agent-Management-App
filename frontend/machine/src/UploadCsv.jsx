@@ -48,7 +48,7 @@ const UploadCSV = () => {
     }
   
     try {
-      const response = await axios.post("http://localhost:3001/api/csv/upload", formData, {
+      const response = await axios.post("https://agent-management-app.onrender.com/api/csv/upload", formData, {
         headers: { "Content-Type": "multipart/form-data" }
       });
       console.log("✅ Upload successful:", response.data);

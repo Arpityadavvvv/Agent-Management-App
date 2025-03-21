@@ -8,7 +8,7 @@ const AgentsTaskList = () => {
   useEffect(() => {
     const fetchAgents = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/api/agents/with-tasks"); // ✅ Fixed API endpoint
+        const response = await axios.get("https://agent-management-app.onrender.com/api/agents/with-tasks"); // ✅ Fixed API endpoint
         setAgents(response.data);
       } catch (error) {
         console.error("Error fetching agents:", error.response ? error.response.data : error.message);

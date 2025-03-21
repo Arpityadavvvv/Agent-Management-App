@@ -12,7 +12,7 @@ const AddAgent = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3001/api/agents/add", { name, email, mobile, password });
+      await axios.post("https://agent-management-app.onrender.com/api/agents/add", { name, email, mobile, password });
       alert("Agent added successfully!");
       navigate('/with-tasks');
 

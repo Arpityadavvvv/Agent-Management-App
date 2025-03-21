@@ -15,7 +15,7 @@ const Signup = () => {
     e.preventDefault();
     console.log("Signup Data:", { name, email, password });
 
-    axios.post('http://localhost:3001/register',{name,email,password})   // axios.post('url'.'{data}')
+    axios.post('https://agent-management-app.onrender.com/register',{name,email,password})   // axios.post('url'.'{data}')
         .then(result => {console.log(result)
             toast.success("sign-up successfull");
             navigate('/login')

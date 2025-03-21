@@ -13,7 +13,7 @@ const Login = () => {
     e.preventDefault();
     console.log("Login Data:", { email, password });
 
-    axios.post('http://localhost:3001/login',{email,password})
+    axios.post('https://agent-management-app.onrender.com/login',{email,password})
     .then(result => {console.log(result)
         if(result.data.message === "Success"){
             toast.success("login succesful");
