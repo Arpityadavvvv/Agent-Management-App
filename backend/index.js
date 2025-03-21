@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 
 // ✅ Fix CORS issues
-app.use(cors({ origin: "https://agentmanagementapp-76dk44zjz-arpit-yadavs-projects-0684bdcb.vercel.app/", credentials: true })); // Adjust frontend port if necessary
+app.use(cors({ origin: "https://agentmanagementapp-76dk44zjz-arpit-yadavs-projects-0684bdcb.vercel.app", credentials: true })); // Adjust frontend port if necessary
 
 // ✅ Connect to MongoDB
 mongoose
